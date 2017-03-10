@@ -1,0 +1,6 @@
+files
+wifidog-gateway.debhelper.log
+wifidog-gateway.substvars
+wifidog-gateway/
+*.debhelper
+*~

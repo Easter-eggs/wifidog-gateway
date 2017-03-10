@@ -1,0 +1,27 @@
+This package was debianized by Benjamin Renard <brenard@zionetrix.net> on
+Mon, 09 Jan 2012 15:04:11 +0100.
+
+It was downloaded from Subversion of projet Wifidog :
+
+  https://dev.wifidog.org/svn/trunk/wifidog
+
+Upstream Author:
+
+    Wifidog
+
+Copyright:
+
+    Copyright (C) 1994, 1995, 1996, 1999, 2000, 2001, 2002, 2004, 2005,
+    2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+    
+    This software is issued from GNU GENERAL PUBLIC LICENSE Version 2
+
+License:
+
+    You can use it under GNU GENERAL PUBLIC LICENSE Version 2 policy 
+     
+    For more information on GNU GENERAL PUBLIC LICENSE Version 2 policy,
+    please refer to COPYING. 
+     
+The Debian packaging is (C) 2012, Benjamin Renard <brenard@zionetrix.net> and
+is licensed under the GPL, see `/usr/share/common-licenses/GPL'.

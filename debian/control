@@ -1,0 +1,15 @@
+Source: wifidog-gateway
+Section: net
+Priority: extra
+Maintainer: Benjamin Renard <brenard@zionetrix.net>
+Build-Depends:
+ debhelper, automake
+Homepage: http://dev.wifidog.org/
+Vcs-Browser: http://git.zionetrix.net/?p=wifidog-gateway-debian-package
+Vcs-Git: http://git.zionetrix.net/git/wifidog-gateway-debian-package
+
+Package: wifidog-gateway
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: The Wifidog gateway daemon
+ This package contains the Wifidog gateway daemon.

@@ -33,3 +33,7 @@ src/Makefile.in
 stamp-h1
 wifidog-msg.html
 wifidog.spec
+
+# Debian packages files
+build-stamp
+configure-stamp

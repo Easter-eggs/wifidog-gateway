@@ -1,0 +1,55 @@
+Debian Package Informations
+===========================
+
+This pool of files permit to make a Debian package for the Wifidog's gateway daemon.
+
+This repository provide the "debian" directory contains of the build environment of
+the Debian package.
+
+How-to compile the Debian package
+---------------------------------
+
+On Debian Squeeze :
+
+- Add this lines on your apt/sources.list file :
+
+  deb http://debian.zionetrix.net/debian/ squeeze wifidog
+  deb-src http://debian.zionetrix.net/debian/ squeeze wifidog
+
+- Run 'apt-get update' to update APT cache
+- In /tmp directory, run apt-get source wifidog-gateway
+- Run 'apt-get build-dep wifidog-gateway' to install build dependency
+- In /tmp/wifidog-gateway, run 'dpkg-buildpackage' to build the Debian package
+
+Your Debian package will be build in /tmp directory
+
+How-to upgrade the Debian package from the Subversion server of the Wifidog project
+-----------------------------------------------------------------------------------
+
+Requirement
+~~~~~~~~~~~
+
+- Subversion and git :
+  apt-get install subversion git
+- In /usr/local/src for instance::
+
+
+  svn checkout https://dev.wifidog.org/svn/trunk/wifidog
+
+.. note:: Check subversion URL in http://dev.wifidog.org/wiki/Download if necessary.
+
+- Move wifidog directory resulting of the previous command to wifidog-svn.[last SVN commit id]
+- Enter to the resulting directory of the previous command and run::
+
+
+  git clone http://git.zionetrix.net/git/wifidog-gateway-debian-package debian
+
+- Check new build dependency on http://dev.wifidog.org/wiki/doc/install/gateway, and update debian/control file if necessary
+- Check change on build method in INSTALL file. Update dirs, docs and/or rules files in debian directory if necessary
+- Update debian/copyright file if necessary
+- Update debian/changelog file
+- Finaly, run dpkg-buildpackage command. Check the result of this command. Your debian package will normaly build in '../' directory (/usr/local/src).
+
+
+
+  

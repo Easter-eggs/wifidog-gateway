@@ -1,0 +1,18 @@
+wifidog-gateway (1.3.0-1) unstable; urgency=low
+
+  * Update with release 1.3.0
+
+ -- Benjamin Renard <brenard@easter-eggs.com>  Fri, 10 Mar 2017 11:34:56 +0100
+
+wifidog-gateway (svn.r1461-2) unstable; urgency=low
+
+  * Fix wifidog binary source
+  * Add a Debian style init.d script
+
+ -- Benjamin Renard <brenard@zionetrix.net>  Tue, 10 Jan 2012 12:13:25 +0100
+
+wifidog-gateway (svn.r1461-1) unstable; urgency=low
+
+  * Initial Debian release
+
+ -- Benjamin Renard <brenard@zionetrix.net>  Mon, 09 Jan 2012 12:17:39 +0100
