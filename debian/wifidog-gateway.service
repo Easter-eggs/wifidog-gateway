@@ -1,0 +1,10 @@
+[Unit]
+Description=Wifidog-gateway service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/wifidog -c $DAEMON_CONF -s -d $LOG_LEVEL
+EnvironmentFile=/etc/default/wifidog-gateway
+
+[Install]
+WantedBy=multi-user.target
